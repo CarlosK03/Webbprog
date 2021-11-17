@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{% static 'Hello/style.css' %}">
+</head>
+<body>
+    <div class="navbar">
+        <li> <a href="#INSERT1">Insert</a></li>
+         <li><a href="#INSERT2">Insert</a></li>
+        <li> <a href="#INSERT3">Insert</a></li>
+    </div>
+
+    <h1> This is my homepage</h1>
+    <p> Här finns allt på min homepage</p>
+    <p>Hej {{name}}</p>
+    {% block content %}
+        <p> Vi är på index.html & detta kommer att ändras!</p>
+
+        <ul class="pog">
+            {% for frukt in lista %}
+            <li>{{ frukt }}</li>
+            {% endfor %}
+        </ul>
+    {% endblock %}
+</body>
+</html>

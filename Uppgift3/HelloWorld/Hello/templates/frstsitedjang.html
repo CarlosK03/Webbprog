@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Site</title>
+    <link rel="stylesheet" href="{% static 'Hello/styleformain.css' %}">
+</head>
+<body class="body">
+    <div class="navbar">
+        <li> <a href="#INSERT1">Insert</a></li>
+        <li> <a href="#INSERT2">Insert</a></li>
+        <li> <a href="#INSERT3">Insert</a></li>
+    </div>
+    <form action="Your-Name" method="post">
+        <label for="Your_Name"> Your name: </label>
+        <input id="Your_Name" type="text" name="Your_Name">
+    value="{{ current_name }}">
+        <input type="submit" value="OK">
+    </form>
+    {% block content %}
+    <h1 id="color" class="align">Welcome to the site</h1>
+    <br>
+    <p id="color" class="width">The purpose of this site is to inform you about Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima tempora nulla saepe sed, recusandae repellendus temporibus voluptatum possimus est eum quisquam doloribus cumque, dicta harum quaerat, quae nam explicabo.</p>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+    <img src="https://emoji.gg/assets/emoji/9109_Sad_Cat_Thumbs_Up.png" alt="Sad cat showing thumbs up" class="align">
+    {% endblock %}
+ </a>
+</body>
+</html>

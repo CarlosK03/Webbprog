@@ -1,0 +1,25 @@
+.body {
+    background-color: black;
+  }
+ 
+#color {
+color: blueviolet
+  }
+
+.width {
+    width: 250px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+.align{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
